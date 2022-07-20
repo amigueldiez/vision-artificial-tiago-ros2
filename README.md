@@ -1,5 +1,7 @@
 # Proyecto visión con TIAGo
 
+![image]({https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue})
+
 ## Objetivo y desarrollo del proyecto
 
 El proyecto consiste en permitir analizar las imágenes recibidas por el topic de la cámara de [TIAGo](https://grupoadd.es/el-robot-tiago). Para ello se realiza un nodo que se suscribe a las imágenes del topic, y mediante un algoritmo de visión artificial es capaz de diferenciar tazas y vasos. Este nodo enviará por otro topic las _bounding boxes_ que encuentre en la imagen. Posteriormente, se ha desarrollado otro nodo que se suscribe a dos topics, el de la cámara y el de las _bouding boxes_, y envía por un topic las imagen con las tazas y vasos que ha reconocido.
